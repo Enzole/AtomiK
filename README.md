@@ -4,13 +4,13 @@
 Développé par <Enzo Leclercq> <Nathan Lefebvre Taochi>
 Contacts : <enzo.leclercq4.etu@univ-lille.fr> , <mail2>
 
-# Présentation de <Atomik>
+# Présentation d'Atomik
 
 <Description d'AtomiK>
 Des captures d'écran illustrant le fonctionnement du logiciel sont proposées dans le répertoire shots.
 
 
-# Utilisation de <d'Atomik>
+# Utilisation d'Atomik
 
 Afin d'utiliser le projet, il suffit de taper les commandes suivantes dans un terminal :
 

@@ -1,16 +1,16 @@
 <Mettre ici le nom de votre jeu>
 ===========
 
-Développé par <prénom1 nom1> <prénom2 nom2>
-Contacts : <mail1> , <mail2>
+Développé par <Enzo Leclercq> <Nathan Lefebvre Taochi>
+Contacts : <enzo.leclercq4.etu@univ-lille.fr> , <mail2>
 
-# Présentation de <le nom de votre jeu>
+# Présentation de <Atomik>
 
-<Description de votre jeu>
+<Description d'AtomiK>
 Des captures d'écran illustrant le fonctionnement du logiciel sont proposées dans le répertoire shots.
 
 
-# Utilisation de <le nom de votre jeu>
+# Utilisation de <d'Atomik>
 
 Afin d'utiliser le projet, il suffit de taper les commandes suivantes dans un terminal :
 

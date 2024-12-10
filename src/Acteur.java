@@ -1,7 +1,8 @@
+import extensions.File;
 class Acteur{
     int pv;
     String nom;
-    String sprite;
+    File sprite;
     Type type;
     boolean joueur;
 }

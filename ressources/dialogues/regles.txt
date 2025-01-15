@@ -1,0 +1,23 @@
+Règles du Jeu de Combat au Tour par Tour - Quiz de Chimie
+
+1. Introduction
+    - Ce jeu est un combat au tour par tour où les attaques sont des questions de chimie posées sous forme de QCM (Questions à Choix Multiples).
+    - Chaque joueur commence avec un certain nombre de points de vie (PV).
+
+2. Questions Posées par la Machine
+    - Les questions de chimie sont générées et posées par la machine.
+    - Le joueur doit répondre correctement aux questions pour lancer ses attaques.
+
+3. Attaques et Défenses
+    - Si le joueur répond correctement à la question posée, il inflige des dégâts à son adversaire.
+    - Si le joueur répond incorrectement, il ne cause aucun dégât et perd son tour.
+
+4. Points de Vie (PV)
+    - Chaque joueur commence avec 100 PV.
+    - Les dégâts infligés par une réponse correcte sont de 10 PV.
+
+5. Victoire
+    - Le jeu continue jusqu'à ce qu'un des joueurs ait ses PV réduits à 0.
+    - Le joueur dont les PV atteignent 0 en premier perd la partie.
+
+Amusez-vous bien et que le meilleur chimiste gagne !

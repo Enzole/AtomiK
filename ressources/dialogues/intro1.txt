@@ -1,0 +1,8 @@
+Bonjour nouveau combattant !
+Moi c'est Monsieur Puel.
+Je vois que tu es prêt à tenter l'aventure Atomik.
+À moins que tu aies besoin de prendre connaissance des règles qui règnent sur cet univers ?
+Il est désormais temps de choisir ton nouveau compagnon.
+Voici ceux qui sont disponibles :
+Tu es désormais prêt à partir.
+Je te propose de me défier pour commencer...

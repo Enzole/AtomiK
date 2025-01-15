@@ -1,1 +1,0 @@
-enum Type{EAU, FEU}

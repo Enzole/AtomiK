@@ -3,6 +3,7 @@ class Acteur{
     int pv;
     String nom;
     File sprite;
-    Type type;
+    Element element;
     boolean joueur;
+    //int multiplicateur;
 }

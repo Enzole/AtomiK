@@ -39,6 +39,10 @@
     }
 
 
+
+
+
+
 void combat(Acteur act1, Acteur act2) {
         Acteur current;
         boolean who = false;

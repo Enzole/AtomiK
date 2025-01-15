@@ -15,7 +15,7 @@ class comm extends Program{
         for(int i = 0; i<length(data,1);i++){
             for(int j=0; j<length(data,1);j++){
 
-                data[i][j]= getCell(start, i, j);
+                data[i][j]= getCell(start, i, j);x
             }
         }
 

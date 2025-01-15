@@ -5,5 +5,5 @@ class Acteur{
     File sprite;
     Element element;
     boolean joueur;
-    //int multiplicateur;
+    //qint multiplicateur;
 }

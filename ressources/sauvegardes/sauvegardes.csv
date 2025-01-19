@@ -1,11 +1,2 @@
-Nom,vitesse,AAAAAAAAA, victoires, défaites
-AAA,50,null,0,0
-Enzo,20,Shorse,0,0
-Enza,60,null,0,0
-Jager,10,Shorse,0,0
-Malori,20,null,0,0
-Maxime,60,null,0,0
-Dégraissant,50,null,0,0
-thinkpad,60,null,0,0
-Florine,30,Logo,0,0
-pas,30,Logo,0,0
+Nom,vitesse,créature,vICTOIRES, défaites
+Enzo,20,shorse,1,0

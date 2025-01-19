@@ -4,4 +4,5 @@ class Question{
     boolean estBonus;
     int valeur;
     int indiceCSV;
+    int bonneReponse;
 }

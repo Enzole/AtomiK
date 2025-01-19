@@ -77,3 +77,80 @@ void combat(Acteur act1, Acteur act2) {
             dialogues("Joueur " + current.nom + " gagne !");
         }
     }
+
+
+class AtomikTest {
+
+    void testNewActeur() {
+        Acteur acteur = atomik.newActeur("TestName", true, "TestSprite");
+
+        assertEquals(200, acteur.pv);
+        assertEquals("TestName", acteur.nom);
+        assertTrue(acteur.joueur);
+        assertEquals("TestSprite", acteur.sprite);
+    }
+
+
+    void testGetCouleurPV() {
+
+        assertEquals("\033[32m", atomik.getCouleurPV(200));
+        assertEquals("\033[33m", atomik.getCouleurPV(120));
+        assertEquals("\033[31m", atomik.getCouleurPV(80));
+        assertEquals("\033[31m", atomik.getCouleurPV(30));
+    }
+
+    void testMax() {
+
+        assertEquals(5, atomik.max(3, 5));
+        assertEquals(10, atomik.max(10, 10));
+        assertEquals(7, atomik.max(7, 2));
+    }
+
+    void testInitialiserQuestion() {
+        Question question = atomik.initialiserQuestion();
+
+        assertNotNull(question);
+        assertTrue(question.difficulte >= atomik.FACILE && question.difficulte <= atomik.DIFFICILE);
+        assertTrue(question.valeur == 25 || question.valeur == 50 || question.valeur == 75 || question.valeur == 50);
+        assertTrue(question.indiceCSV >= 1 && question.indiceCSV < atomik.rowCount(atomik.QUESTION));
+    }
+
+    void testQuestionToTab() {
+        Question question = atomik.initialiserQuestion();
+        String[] tab = atomik.questionToTab(question);
+
+        assertNotNull(tab);
+        assertEquals(2, tab.length);
+        assertNotNull(tab[0]);
+        assertNotNull(tab[1]);
+    }
+
+    void testVerifierQuestion() {
+        Question question = atomik.initialiserQuestion();
+        question.bonneReponse = 1;
+
+        assertTrue(atomik.verifierQuestion(question));
+    }
+
+    void testVerifNom() {
+
+        assertTrue(atomik.verifNom("ValidName"));
+        assertFalse(atomik.verifNom("Invalid,Name"));
+    }
+
+    void testVerifSaisie() {
+
+        assertEquals(2, atomik.verifSaisie(1, 3));
+    }
+
+    void testEstNombre() {
+
+        assertTrue(atomik.estNombre("123"));
+        assertFalse(atomik.estNombre("abc"));
+    }
+
+    void testQueChiffre() {
+
+        assertEquals(123, atomik.queChiffre("123"));
+    }
+}

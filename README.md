@@ -7,6 +7,12 @@ Contacts : <enzo.leclercq4.etu@univ-lille.fr> , <nathan.lefebvre-taochy.etu@univ
 # Présentation d'Atomik
 
 <Description AtomiK>
+Combat de créature en tour par tour inspiré de la licence « Pokémon ».
+Les « attaques » sont des qcm à difficulté variante. Elles ont pour thème général la physique chimie du programme de 4e.
+
+Le tout est mis en forme uniquement en texte et en « Ascii Art ». 
+
+
 Jeu ludoPédagogique réalisé dans le cadre de la SAE 1.02.
 Programmé avec "iJava" : https://www.iut-info.univ-lille.fr/~yann.secq/ijava/
 

@@ -1,12 +1,15 @@
-<Mettre ici le nom de votre jeu>
+<Atomik>
 ===========
 
-Développé par <Enzo Leclercq> <Nathan Lefebvre Taochi>
-Contacts : <enzo.leclercq4.etu@univ-lille.fr> , <mail2>
+Développé par <Enzo Leclercq> <Nathan Lefebvre Taochy>
+Contacts : <enzo.leclercq4.etu@univ-lille.fr> , <nathan.lefebvre-taochy.etu@univ-lille.fr>
 
 # Présentation d'Atomik
 
-<Description d'AtomiK>
+<Description AtomiK>
+Jeu ludoPédagogique réalisé dans le cadre de la SAE 1.02.
+Programmé avec "iJava" : https://www.iut-info.univ-lille.fr/~yann.secq/ijava/
+
 Des captures d'écran illustrant le fonctionnement du logiciel sont proposées dans le répertoire shots.
 
 

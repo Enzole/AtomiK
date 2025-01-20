@@ -252,6 +252,9 @@ class Atomik extends Program {
 
     
     boolean verifNom(String mot){
+
+        if(length(mot)==0){return false;}
+
         for(int i = 0 ; i<length(mot); i++){
             if(charAt(mot,i)==','){return false;}
         }
@@ -274,7 +277,7 @@ class Atomik extends Program {
                 String nom = readString();
 
                 while(!verifNom(nom)){
-                    dialogues("\033[31mDésolé, votre nom de sauvegarde ne peut contenir de virgule (,).\033[0m");
+                    dialogues("\033[31mDésolé, votre nom de sauvegarde ne peut contenir de virgule (,) ou être vide.\033[0m");
                     print(">>>");
                     nom = readString();
                 }
@@ -687,7 +690,6 @@ class Atomik extends Program {
         switch (typePartie) {
             case 1: act2 = newActeur(getCell(sauvegarde, choixPartiesJ2, NOM), false, getCell(sauvegarde, choixPartiesJ2, CREATURE)); break;
             case 0: act2 = prepaBot(botNom); break;
-            // Add more cases if needed for other types of parties
         }
 
         boolean who = false;
@@ -717,11 +719,11 @@ class Atomik extends Program {
                         act2.pv -= qcm.valeur;
                         dialogues("\033[32mAttaque réussie, " + act2.nom + " subit \033[1m" + qcm.valeur + "\033[0m\033[32m dégâts.\033[0m\n");
                     } else if (qcm.estBonus && who && typePartie == 1) {
-                        act1.pv += qcm.valeur;
-                        dialogues("\033[32mAttaque réussie, " + act1.nom + " se soigne de \033[1m" + qcm.valeur + "\033[0m\033[32m points de vie.\033[0m\n");
-                    } else if (qcm.estBonus && !who) {
                         act2.pv += qcm.valeur;
                         dialogues("\033[32mAttaque réussie, " + act2.nom + " se soigne de \033[1m" + qcm.valeur + "\033[0m\033[32m points de vie.\033[0m\n");
+                    } else if (qcm.estBonus && !who) {
+                        act1.pv += qcm.valeur;
+                        dialogues("\033[32mAttaque réussie, " + act1.nom + " se soigne de \033[1m" + qcm.valeur + "\033[0m\033[32m points de vie.\033[0m\n");
                     }
                 } else {
                     dialogues("\033[31mAttaque échouée... La bonne réponse était \033[1m" + getCell(QUESTION, qcm.indiceCSV, 1) + "\033[0m\n");
